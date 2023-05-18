@@ -2,6 +2,7 @@
 
 // default constructor
 Human::Human() {
+	cout << "Human default constructor" << endl;
 	name = "no name";
 	surname = "no surname";
 	age = 15;
@@ -14,7 +15,9 @@ Human::Human(string nm, string surnm, int a) {
 	age = a;
 }
 
-Human::~Human() { }
+Human::~Human() { 
+	cout << "Human destructor" << endl;
+}
 
 string Human::getName() {
 	return name;
